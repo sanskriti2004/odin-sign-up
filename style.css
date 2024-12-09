@@ -16,13 +16,27 @@ body {
 a {
   text-decoration: none;
   color: green;
+  font-weight: 600;
 }
-a,
-button:hover {
+a:hover {
   cursor: pointer;
-  transition: all 0.5s ease-in-out;
+  color: rgb(0, 208, 139);
+  transition: all 0.3s ease-in-out;
 }
-@media screen and (max-width: 400px) {
+#submit:hover {
+  cursor: pointer;
+  background-color: rgb(0, 208, 139);
+  color: white;
+  transition: all 0.3s ease-in-out;
+}
+#cancel:hover {
+  cursor: pointer;
+  border: 1px solid green;
+  background-color: rgba(240, 148, 102, 0.339);
+  transition: all 0.3s ease-in-out;
+}
+
+@media (min-width: 100px) and (max-width: 400px) {
   body {
     margin-left: 10px;
     margin-right: 10px;
@@ -121,6 +135,223 @@ button:hover {
     cursor: pointer;
   }
   .footer {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+}
+@media (min-width: 400px) and (max-width: 1000px) {
+  body {
+    margin-left: 13px;
+    margin-right: 13px;
+  }
+  .header {
+    display: flex;
+    flex-direction: column;
+    margin: 0px 0px 20px 0px;
+  }
+  .sign-up {
+    font-size: 30px;
+    font-weight: 800;
+    margin-bottom: 3px;
+  }
+  .sign-up-text {
+    font-size: 14px;
+    font-weight: 400;
+  }
+  main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+  }
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+  }
+  .outer-div-1,
+  .outer-div-2,
+  .outer-div-3,
+  .outer-div-4 {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+  }
+  .inner-div {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    align-items: flex-start;
+  }
+  .inner-div label {
+    font-weight: 600;
+  }
+  .inner-div input,
+  select {
+    width: 350px;
+    height: 30px;
+    border: 1px solid rgba(0, 0, 0, 0.256);
+    border-radius: 5px;
+    padding: 5px;
+    font-size: 18px;
+  }
+  .buttons {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+  }
+  select {
+    /* padding: 20px; */
+    width: 360px;
+    height: 41px;
+    color: black;
+  }
+  #phone-no {
+    width: 65px;
+    color: black;
+    margin-right: 0px;
+  }
+  .phone-inner-div {
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+  }
+  #phone-no-input {
+    width: 280px;
+    height: 30px;
+    margin-left: 0px;
+  }
+  button {
+    width: 150px;
+    margin: 20px;
+    font-size: 15px;
+    font-weight: 600;
+    padding: 10px 15px;
+    border-radius: 5px;
+    border: none;
+
+    cursor: pointer;
+  }
+  .footer {
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+}
+
+@media (min-width: 1000px) and (max-width: 3000px) {
+  body {
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top: 10px;
+  }
+  .header {
+    display: flex;
+    flex-direction: column;
+    margin: 0px 0px 25px 0px;
+  }
+  .sign-up {
+    font-size: 38px;
+    font-weight: 800;
+    margin-bottom: 3px;
+  }
+  .sign-up-text {
+    font-size: 18px;
+    font-weight: 400;
+  }
+  main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 22px;
+  }
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+  }
+  .outer-div-1,
+  .outer-div-2,
+  .outer-div-3,
+  .outer-div-4 {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    align-items: center;
+    justify-content: center;
+  }
+  .inner-div {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    align-items: flex-start;
+    justify-content: left;
+    align-items: start;
+  }
+  .inner-div label {
+    font-weight: 600;
+  }
+  .inner-div input,
+  select {
+    width: 380px;
+    height: 30px;
+    border: 1px solid rgba(0, 0, 0, 0.256);
+    border-radius: 5px;
+    padding: 5px;
+    font-size: 20px;
+  }
+  .buttons {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+  }
+  select {
+    /* padding: 20px; */
+    width: 390px;
+    height: 41px;
+    color: black;
+  }
+  #phone-no {
+    width: 90px;
+    color: black;
+    margin-right: 0px;
+  }
+  .phone-inner-div {
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+  }
+  #phone-no-input {
+    width: 285px;
+    height: 30px;
+    margin-left: 0px;
+  }
+  .buttons {
+    display: flex;
+    flex-direction: row;
+    gap: 0px;
+    align-items: center;
+    justify-content: center;
+  }
+  button {
+    width: 388px;
+    margin: 20px;
+    font-size: 20px;
+    font-weight: 600;
+    padding: 13px 15px;
+    border-radius: 5px;
+    border: none;
+
+    cursor: pointer;
+  }
+  .footer {
+    font-size: 23px;
     text-align: center;
     margin-bottom: 20px;
   }
