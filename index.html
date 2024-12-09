@@ -15,8 +15,10 @@
   <body>
     <header>
       <div class="header">
-        <h1>Sign Up</h1>
-        <h5>Enter you details below to create your account and get started.</h5>
+        <h1 class="sign-up">Sign Up</h1>
+        <h5 class="sign-up-text">
+          Enter you details below to create your account and get started.
+        </h5>
       </div>
     </header>
 
@@ -54,7 +56,7 @@
           </div>
 
           <div class="inner-div">
-            <label for="nationality">nationality</label>
+            <label for="nationality">Nationality</label>
             <select
               name="nationality"
               id="nationality"
@@ -75,22 +77,29 @@
         <div class="outer-div-3">
           <div class="inner-div">
             <label for="phone-no">Pick your Phone</label>
-            <select
-              name="phone-no"
-              id="phone-no"
-              placeholder="Phone Number"
-              required
-            >
-              <option value="" disabled selected>+??</option>
-              <option value="+61">Australia (+61)</option>
-              <option value="+1">Canada (+1)</option>
-              <option value="+91">India (+91)</option>
-              <option value="+81">Japan (+81)</option>
-              <option value="+44">UK (+44)</option>
-              <option value="+1">USA (+1)</option>
-              <option value="+84">Vietnam (+84)</option>
-            </select>
-            <input type="tel" placeholder="Enter your phone number" required />
+            <div class="phone-inner-div">
+              <select
+                name="phone-no"
+                id="phone-no"
+                placeholder="Phone Number"
+                required
+              >
+                <option value="" disabled selected>+??</option>
+                <option value="+61">(+61)</option>
+                <option value="+1">(+1)</option>
+                <option value="+91">(+91)</option>
+                <option value="+81">(+81)</option>
+                <option value="+44">(+44)</option>
+                <option value="+1">(+1)</option>
+                <option value="+84">(+84)</option>
+              </select>
+              <input
+                type="tel"
+                placeholder="Enter your phone number"
+                id="phone-no-input"
+                required
+              />
+            </div>
           </div>
 
           <div class="inner-div">
@@ -134,9 +143,7 @@
           <button id="submit">Sign Up</button>
         </div>
       </form>
-      <span class="footer"
-        >Already have an account? <a href="#">Log In</a></span
-      >
+      <span class="footer">Already have an account? <a href="#">Login</a></span>
     </main>
   </body>
 </html>
